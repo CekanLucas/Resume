@@ -21,7 +21,6 @@
       href="https://fonts.googleapis.com/css?family=Fira+Mono:500&display=swap" 
       rel="stylesheet">
 <link rel="stylesheet" href="./font-awesome/css/all.css">
-<script src="./JS.js"></script>
 <style> 
 
 html>body, p {
@@ -75,10 +74,22 @@ i, .highlight, .sololearn{
   float: right;
   font-weight: skyblue;
 }
+#map{
+  filter: hue-rotate(180deg) invert(1) brightness(350%) contrast(30%);
+}
+.Responsibilities{
+  color: rgb(26, 40, 238);
+  font-weight: bolder;
+}
+.Achievements{
+  color: limegreen;
+  font-weight: bolder;
+}
 </style>
+<script src="./JS.js"></script>
 </head>    
-<h1 id="lucas-cekan-smallsmall">Lucas Cekan <small></small></h1>
-<h2 id="full-stack-web-developer">Full Stack Web Developer</h2>
+<h1>Lucas Cekan</h1>
+<h2>Full Stack Web Developer</h2>
 <p>Junior Full Stack Web Developer with a <span class="Tomato">proven track record of adding value</span> to any bussiness. Motivating presence in a team context. <em>Extra bonus skills in graphic design, user experience and user design, communication through online media, learning and applying new skills and much more.</em> <span class="highlight">Looking for a challenge to apply my enthusiasm and creativity.</span> Analaytical mindset gained from background in <span class="Violet">Finance and Economics</span> from tertiary education and also in <span class="Violet">Science and Mathematics</span> from specialised highschool</p>
 <table>
 <thead>
@@ -110,84 +121,32 @@ i, .highlight, .sololearn{
 </tr>
 <tr>
 <td><i class="fas fa-map-marker-alt"></i></td>
-<td>Toronto, St. Catherines, Welland*</td>
+<td>See Map*</td>
 </tr>
 </tbody>
 </table>
-<p>*see map for general region</p>
+<p>*Toronto, St. Catherines, Welland, Hamilton Region</p>
 <!--Google map API -->
 <div id="map" style="width:90%;height:400px;"></div>
 <script>
 
-// Initialize and add the map
-function initMap() {
-	let image = '../images/Marker.png';
-	let image2 = '../images/DanceMarker.png';
-  	// The location of DKcenter
-  	let DKcoor = {lat: -34.742750, lng: 138.660641};
-  	// The map, centered bit to the side of Dkcenter
-  	let map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 13, center: DKcoor});
- 	 // The marker, positioned at dk center
-/*   	let marker = new google.maps.Marker({
-		position: DKcoor, 
-		map: map, 
-		title:'Main\n10 Trimmer Rd.\nElizabeth South\nSouth Australia\n5112',
-		icon: image
-	}) */
-/* 	let marker2 = new google.maps.Marker({
-		position: {lat: -34.731211, lng: 138.660750},
-		map: map, 
-		title:'Dance Studio\n6 Chivell.\nElizabeth South\nSouth Australia\n5112',
-		icon: image2
-	}); */
-	//infowindow -iw Main Building
-	let contentString = 
-			'<h3> Main Building </h3>'
-			+'<p>' 
-			+	'mobile: <a href="tel:0411 421 945">0411 421 945</a> <br>'
-			+	'email: <a href="mailto:davidjgarrard@bigpond.com"> davidjgarrard@bigpond.com </a><br>'
-			+	'address: <a href="#" onclick="centerMap()">10 Trimmer Rd.</a>'
-			+'</p>'
-		;
-	
-	let infowindow = new google.maps.InfoWindow({
-    content: contentString
-	}); 
-
-	marker.addListener('click', function() {
-    infowindow.open(map, marker);
-	});
-	//infowindow -iw Dance Studio
-	let contentString2 = 
-		'<h3> Dance Studio </h3>'
-		+'<p>' 
-		+	'mobile: <a href="tel:0411 421 945">0411 421 945</a> <br>'
-		+	'email: <a href="mailto:davidjgarrard@bigpond.com"> davidjgarrard@bigpond.com </a><br>'
-		+	'address: <a href="#" onclick="centerMap()">6 Chivell St.</a>'
-		+'</p>'
-	;
-	
-	let infowindow2 = new google.maps.InfoWindow({
-    content: contentString2
-	}); 
-
-	marker2.addListener('click', function() {
-    infowindow2.open(map, marker2);
-	});
+function initMap() { // Initialize and add the map
+  	const center = {lat: 43.4, lng: -79.5};
+  	const map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 9, center});
 }
 </script>
 <!--End Google map API -->
-<h2 id="previous-positions">Previous Positions</h2>
-<h4 id="website-developer-span-class%22date%222019span">Website Developer <span class="date">2019</span></h4>
+<h2>Previous Positions</h2>
+<h4>Website Developer <span class="date">2019</span></h4>
 <p>DK Centre of Arts</p>
-<p>Responsibilities</p>
+<p class=Responsibilities>Responsibilities</p>
 <ul>
 <li>Create a website for a family owed small business</li>
 <li>Communicate the organisation’s community engagement</li>
 <li>Ability to add a digital presence despite owner lack of experience</li>
 </ul>
-<p>Achievements</p>
+<p class=Achievements>Achievements</p>
 <ul>
 <li>Received praise for my ability to communicate  DK Centre’s role in the community through my the website and extremely well worded description on the home page</li>
 <li>Owner and manager’s  observation showed an ability to work on a massive project day in and out without being distracted until project completion</li>
@@ -196,17 +155,16 @@ function initMap() {
 <li>Finalized my learning in a full stack website development creating a website front to back</li>
 <li>Shown my ability to add value to a business, every business has the potential to benefit from technology and this was demonstrated in this project</li>
 </ul>
-<p>Volunteer</p>
-<p>Digital Marketing Assistant  					2019</p>
+<h4>Digital Marketing Assistant & Volunteer<span class="date">2019</span></h4>
 <p>Channel 44 ABC</p>
-<p>Responsibilities</p>
+<p class=Responsibilities>Responsibilities</p>
 <ul>
 <li>Maintain a website</li>
 <li>Increase traffic through SEO (search engine optimisation)</li>
 <li>Working collaboratively under the direction of an Digital Asset Manager</li>
 <li>Increasing the digital presence of a traditional television programmer</li>
 </ul>
-<p>Achievements</p>
+<p class=Achievements>Achievements</p>
 <ul>
 <li>Upskilled successfully in a field outside my formal education</li>
 <li>Successfully fixed many bugs and improved the layout and look of the website</li>
@@ -214,15 +172,15 @@ function initMap() {
 <li>Finalized my learning in WordPress, HTML, CSS, JavaScript, PHP</li>
 <li>Shown my ability to adapt and thrive in an increasingly digital world.</li>
 </ul>
-<p>Drill Operator	2015</p>
+<h4>Drill Operator	<span class="date">2015</span></h4>
 <p>Raglan Drilling</p>
-<p>Responsibilities</p>
+<p class=Responsibilities>Responsibilities</p>
 <ul>
 <li>Operating and maintaining drill machinery</li>
 <li>Tending to minor tasks in the yard when not in the field</li>
 <li>Working in a team to accomplish tasks</li>
 </ul>
-<p>Achievements</p>
+<p class=Achievements>Achievements</p>
 <ul>
 <li>Was opened to a non-academic work experience outside of comfort zone</li>
 <li>Gained experience in more physical activities</li>
@@ -278,10 +236,11 @@ High School (Year 10-12)<br> Australian Science and Mathematics School 	<span cl
 <li>JAM stack</li>
 <li>Microsoft Office / VBA</li>
 <li>Photoshop / GIMP</li>
+<li>Wordpress</li>
 </ul>
 <h2 id="projects">PROJECTS</h2>
 <p>WikiMaps</p>
-<p>A single page applications that allow users to create maps with custom pins and locations for collaberation based on Google Maps API</p>
+<p>A single page applications that allow users to create maps with custom pins and locations for collaboration based on Google Maps API</p>
 <p>HTML CSS JS SASS JS JQuery AJAX Node Express PostgreSQL</p>
 <p>Interview Scheduler</p>
 <p>A React single page web app that allows users to book appointments based on limited spots, first come, first serve basis</p>
@@ -292,6 +251,6 @@ Single page Twitter clone app</p>
 <p>Jungle
 A simple Ruby on Rails e-commerce app</p>
 <p>Ruby Rails RSpec bcrypt</p>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0-1dTUpgb4f7Za4f5vey93FaMvhr13yI&callback=initMap"></script>
     </body>
     </html>
