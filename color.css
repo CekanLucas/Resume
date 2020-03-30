@@ -1,0 +1,741 @@
+
+
+.Black {
+    color:Black;
+}
+
+
+.Navy {
+    color:Navy;
+}
+
+
+.DarkBlue {
+    color:DarkBlue;
+}
+
+
+.MediumBlue {
+    color:MediumBlue;
+}
+
+
+.Blue {
+    color:Blue;
+}
+
+
+.Green {
+    color:Green;
+}
+
+
+.Teal {
+    color:Teal;
+}
+
+
+.DarkCyan {
+    color:DarkCyan;
+}
+
+
+.DeepSkyBlue {
+    color:DeepSkyBlue;
+}
+
+
+.DarkTurquoise {
+    color:DarkTurquoise;
+}
+
+
+.MediumSpringGreen {
+    color:MediumSpringGreen;
+}
+
+
+.Lime {
+    color:Lime;
+}
+
+
+.SpringGreen {
+    color:SpringGreen;
+}
+
+
+.Aqua {
+    color:Aqua;
+}
+
+
+.Cyan {
+    color:Cyan;
+}
+
+
+.MidnightBlue {
+    color:MidnightBlue;
+}
+
+
+.DodgerBlue {
+    color:DodgerBlue;
+}
+
+
+.LightSeaGreen {
+    color:LightSeaGreen;
+}
+
+
+.ForestGreen {
+    color:ForestGreen;
+}
+
+
+.SeaGreen {
+    color:SeaGreen;
+}
+
+
+.DarkSlateGray {
+    color:DarkSlateGray;
+}
+
+
+.DarkSlateGrey {
+    color:DarkSlateGrey;
+}
+
+
+.LimeGreen {
+    color:LimeGreen;
+}
+
+
+.MediumSeaGreen {
+    color:MediumSeaGreen;
+}
+
+
+.RoyalBlue {
+    color:RoyalBlue;
+}
+
+
+.SteelBlue {
+    color:SteelBlue;
+}
+
+
+.DarkSlateBlue {
+    color:DarkSlateBlue;
+}
+
+
+.MediumTurquoise {
+    color:MediumTurquoise;
+}
+
+
+.Indigo {
+    color:Indigo;
+}
+
+
+.DarkOliveGreen {
+    color:DarkOliveGreen;
+}
+
+
+.CadetBlue {
+    color:CadetBlue;
+}
+
+
+.CornflowerBlue {
+    color:CornflowerBlue;
+}
+
+
+.RebeccaPurple {
+    color:RebeccaPurple;
+}
+
+
+.MediumAquaMarine {
+    color:MediumAquaMarine;
+}
+
+
+.DimGray {
+    color:DimGray;
+}
+
+
+.DimGrey {
+    color:DimGrey;
+}
+
+
+.SlateBlue {
+    color:SlateBlue;
+}
+
+
+.OliveDrab {
+    color:OliveDrab;
+}
+
+
+.SlateGray {
+    color:SlateGray;
+}
+
+
+.SlateGrey {
+    color:SlateGrey;
+}
+
+
+.LightSlateGray {
+    color:LightSlateGray;
+}
+
+
+.LightSlateGrey {
+    color:LightSlateGrey;
+}
+
+
+.MediumSlateBlue {
+    color:MediumSlateBlue;
+}
+
+
+.LawnGreen {
+    color:LawnGreen;
+}
+
+
+.Chartreuse {
+    color:Chartreuse;
+}
+
+
+.Aquamarine {
+    color:Aquamarine;
+}
+
+
+.Maroon {
+    color:Maroon;
+}
+
+
+.Purple {
+    color:Purple;
+}
+
+
+.Olive {
+    color:Olive;
+}
+
+
+.Gray {
+    color:Gray;
+}
+
+
+.Grey {
+    color:Grey;
+}
+
+
+.SkyBlue {
+    color:SkyBlue;
+}
+
+
+.LightSkyBlue {
+    color:LightSkyBlue;
+}
+
+
+.BlueViolet {
+    color:BlueViolet;
+}
+
+
+.DarkRed {
+    color:DarkRed;
+}
+
+
+.DarkMagenta {
+    color:DarkMagenta;
+}
+
+
+.SaddleBrown {
+    color:SaddleBrown;
+}
+
+
+.DarkSeaGreen {
+    color:DarkSeaGreen;
+}
+
+
+.LightGreen {
+    color:LightGreen;
+}
+
+
+.MediumPurple {
+    color:MediumPurple;
+}
+
+
+.DarkViolet {
+    color:DarkViolet;
+}
+
+
+.PaleGreen {
+    color:PaleGreen;
+}
+
+
+.DarkOrchid {
+    color:DarkOrchid;
+}
+
+
+.YellowGreen {
+    color:YellowGreen;
+}
+
+
+.Sienna {
+    color:Sienna;
+}
+
+
+.Brown {
+    color:Brown;
+}
+
+
+.DarkGray {
+    color:DarkGray;
+}
+
+
+.DarkGrey {
+    color:DarkGrey;
+}
+
+
+.LightBlue {
+    color:LightBlue;
+}
+
+
+.DarkGreen {
+    color:DarkGreen;
+}
+
+
+.Turquoise {
+    color:Turquoise;
+}
+
+
+.PaleTurquoise {
+    color:PaleTurquoise;
+}
+
+
+.LightSteelBlue {
+    color:LightSteelBlue;
+}
+
+
+.PowderBlue {
+    color:PowderBlue;
+}
+
+
+.FireBrick {
+    color:FireBrick;
+}
+
+
+.DarkGoldenRod {
+    color:DarkGoldenRod;
+}
+
+
+.MediumOrchid {
+    color:MediumOrchid;
+}
+
+
+.RosyBrown {
+    color:RosyBrown;
+}
+
+
+.DarkKhaki {
+    color:DarkKhaki;
+}
+
+
+.Silver {
+    color:Silver;
+}
+
+
+.MediumVioletRed {
+    color:MediumVioletRed;
+}
+
+
+.IndianRed {
+    color:IndianRed;
+}
+
+
+.Peru {
+    color:Peru;
+}
+
+
+.Chocolate {
+    color:Chocolate;
+}
+
+
+.Tan {
+    color:Tan;
+}
+
+
+.LightGray {
+    color:LightGray;
+}
+
+
+.LightGrey {
+    color:LightGrey;
+}
+
+
+.Thistle {
+    color:Thistle;
+}
+
+
+.Orchid {
+    color:Orchid;
+}
+
+
+.GoldenRod {
+    color:GoldenRod;
+}
+
+
+.PaleVioletRed {
+    color:PaleVioletRed;
+}
+
+
+.Crimson {
+    color:Crimson;
+}
+
+
+.Gainsboro {
+    color:Gainsboro;
+}
+
+
+.Plum {
+    color:Plum;
+}
+
+
+.BurlyWood {
+    color:BurlyWood;
+}
+
+
+.LightCyan {
+    color:LightCyan;
+}
+
+
+.Lavender {
+    color:Lavender;
+}
+
+
+.DarkSalmon {
+    color:DarkSalmon;
+}
+
+
+.Violet {
+    color:Violet;
+}
+
+
+.PaleGoldenRod {
+    color:PaleGoldenRod;
+}
+
+
+.LightCoral {
+    color:LightCoral;
+}
+
+
+.Khaki {
+    color:Khaki;
+}
+
+
+.AliceBlue {
+    color:AliceBlue;
+}
+
+
+.HoneyDew {
+    color:HoneyDew;
+}
+
+
+.Azure {
+    color:Azure;
+}
+
+
+.SandyBrown {
+    color:SandyBrown;
+}
+
+
+.Wheat {
+    color:Wheat;
+}
+
+
+.Beige {
+    color:Beige;
+}
+
+
+.WhiteSmoke {
+    color:WhiteSmoke;
+}
+
+
+.MintCream {
+    color:MintCream;
+}
+
+
+.GhostWhite {
+    color:GhostWhite;
+}
+
+
+.Salmon {
+    color:Salmon;
+}
+
+
+.AntiqueWhite {
+    color:AntiqueWhite;
+}
+
+
+.Linen {
+    color:Linen;
+}
+
+
+.LightGoldenRodYellow {
+    color:LightGoldenRodYellow;
+}
+
+
+.OldLace {
+    color:OldLace;
+}
+
+
+.Red {
+    color:Red;
+}
+
+
+.Fuchsia {
+    color:Fuchsia;
+}
+
+
+.Magenta {
+    color:Magenta;
+}
+
+
+.DeepPink {
+    color:DeepPink;
+}
+
+
+.OrangeRed {
+    color:OrangeRed;
+}
+
+
+.Tomato {
+    color:Tomato;
+}
+
+
+.HotPink {
+    color:HotPink;
+}
+
+
+.Coral {
+    color:Coral;
+}
+
+
+.DarkOrange {
+    color:DarkOrange;
+}
+
+
+.LightSalmon {
+    color:LightSalmon;
+}
+
+
+.Orange {
+    color:Orange;
+}
+
+
+.LightPink {
+    color:LightPink;
+}
+
+
+.Pink {
+    color:Pink;
+}
+
+
+.Gold {
+    color:Gold;
+}
+
+
+.PeachPuff {
+    color:PeachPuff;
+}
+
+
+.NavajoWhite {
+    color:NavajoWhite;
+}
+
+
+.Moccasin {
+    color:Moccasin;
+}
+
+
+.Bisque {
+    color:Bisque;
+}
+
+
+.MistyRose {
+    color:MistyRose;
+}
+
+
+.BlanchedAlmond {
+    color:BlanchedAlmond;
+}
+
+
+.PapayaWhip {
+    color:PapayaWhip;
+}
+
+
+.LavenderBlush {
+    color:LavenderBlush;
+}
+
+
+.SeaShell {
+    color:SeaShell;
+}
+
+
+.Cornsilk {
+    color:Cornsilk;
+}
+
+
+.LemonChiffon {
+    color:LemonChiffon;
+}
+
+
+.FloralWhite {
+    color:FloralWhite;
+}
+
+
+.Snow {
+    color:Snow;
+}
+
+
+.Yellow {
+    color:Yellow;
+}
+
+
+.LightYellow {
+    color:LightYellow;
+}
+
+
+.GreenYellow {
+    color:GreenYellow;
+}
+
+
+.White {
+    color:White;
+}
+
+
+.Ivory {
+    color:Ivory;
+}
+        

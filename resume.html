@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Online Resume</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+  <link 
+      rel="stylesheet" 
+      type="text/css" 
+      media="all" 
+      href="./color.css"/>
+  <link 
+      rel="stylesheet" 
+      type="text/css" 
+      media="all" 
+      href="./CSS.css"/>
+  <link 
+      href="https://fonts.googleapis.com/css?family=Fira+Mono:500&display=swap" 
+      rel="stylesheet">
+<link rel="stylesheet" href="./font-awesome/css/all.css">
+<script src="./JS.js"></script>
+<style> 
+
+html>body, p {
+  font-family: ubuntu;
+  font-size: 1.1em;
+  text-shadow:none;
+  color:whitesmoke
+}
+h2>code, p>code, li>code, div>code {
+    background-color: #09A;
+    border-radius: 7px;
+    box-shadow: 
+      1px 1px 1px #000,
+      -1px -1px 1px #FFF,
+      -1px 1px 2px #000,
+      1px -1px 2px #000;
+    color: #00f;
+    margin: 5px;
+    padding: 2px;
+    font-family: 'Fira Mono', monospace;
+    text-shadow:none;
+    font-size:0.8em
+}
+body ::selection {
+  /*highlighting*/
+  background: transparent;
+  text-shadow: 
+    1px  0px 1px ,
+    0px  1px 1px ,
+    -1px  0px 1px ,
+    0px -1px 1px ,
+    0px  1px black ,
+    1px  0px black ,
+    -1px  0px black ,
+    0px -1px black ;
+}
+i, .highlight, .sololearn{
+  color:skyblue;
+  font-weight:bold;
+  text-shadow: none;
+  fill: skyblue;
+  margin: 0;
+  padding: none;
+}
+.sololearn{
+  position:relative;
+  right: 60px;
+  height:2em; 
+}
+.date{
+  float: right;
+  font-weight: skyblue;
+}
+</style>
+</head>    
+<h1 id="lucas-cekan-smallsmall">Lucas Cekan <small></small></h1>
+<h2 id="full-stack-web-developer">Full Stack Web Developer</h2>
+<p>Junior Full Stack Web Developer with a <span class="Tomato">proven track record of adding value</span> to any bussiness. Motivating presence in a team context. <em>Extra bonus skills in graphic design, user experience and user design, communication through online media, learning and applying new skills and much more.</em> <span class="highlight">Looking for a challenge to apply my enthusiasm and creativity.</span> Analaytical mindset gained from background  and <span class="Violet">Finance and Economics</span> from tertiary education and also in <span class="Violet">Science and Mathematics</span> from specialised highschool</p>
+<table>
+<thead>
+<tr>
+<th>Contact &amp; Info</th>
+<th>Info Links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><i class="fas fa-envelope-open-text"></i></td>
+<td><a href="mailto:CekanLucas@gmail.com">CekanLucas@gmail.com</a></td>
+</tr>
+<tr>
+<td><i class="fas fa-mobile-alt"></td>
+<td><a href="tel:289-931-5522">289-931-5522</a></td>
+</tr>
+<tr>
+<td><i class="fab fa-linkedin"></i></td>
+<td><a href="https://www.linkedin.com/in/lucas-cekan-760673160/">LinkedIn</a></td>
+</tr>
+<tr>
+<td><i class="fab fa-github-square"></i></td>
+<td><a href="https://github.com/Dubi911">GitHub</a></td>
+</tr>
+<tr>
+<td><img class=sololearn src="file:////media/dubi/76A0-88E7/projects/playground/Notes/Resume/sololearnLogo.svg"></td>
+<td><a href="https://www.sololearn.com/Profile/11527370">SpaceJam<span class="Red">♨</span></a></td>
+</tr>
+<tr>
+<td><i class="fas fa-map-marker-alt"></i></td>
+<td>Toronto, St. Catherines, Welland*</td>
+</tr>
+</tbody>
+</table>
+<p>*see map for general region</p>
+<!--Google map API -->
+<div id="map" style="width:90%;height:400px;"></div>
+<script>
+
+// Initialize and add the map
+function initMap() {
+	let image = '../images/Marker.png';
+	let image2 = '../images/DanceMarker.png';
+  	// The location of DKcenter
+  	let DKcoor = {lat: -34.742750, lng: 138.660641};
+  	// The map, centered bit to the side of Dkcenter
+  	let map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 13, center: DKcoor});
+ 	 // The marker, positioned at dk center
+  	let marker = new google.maps.Marker({
+		position: DKcoor, 
+		map: map, 
+		title:'Main\n10 Trimmer Rd.\nElizabeth South\nSouth Australia\n5112',
+		icon: image
+	})
+	let marker2 = new google.maps.Marker({
+		position: {lat: -34.731211, lng: 138.660750},
+		map: map, 
+		title:'Dance Studio\n6 Chivell.\nElizabeth South\nSouth Australia\n5112',
+		icon: image2
+	});
+	//infowindow -iw Main Building
+	let contentString = 
+			'<h3> Main Building </h3>'
+			+'<p>' 
+			+	'mobile: <a href="tel:0411 421 945">0411 421 945</a> <br>'
+			+	'email: <a href="mailto:davidjgarrard@bigpond.com"> davidjgarrard@bigpond.com </a><br>'
+			+	'address: <a href="#" onclick="centerMap()">10 Trimmer Rd.</a>'
+			+'</p>'
+		;
+	
+	let infowindow = new google.maps.InfoWindow({
+    content: contentString
+	}); 
+
+	marker.addListener('click', function() {
+    infowindow.open(map, marker);
+	});
+	//infowindow -iw Dance Studio
+	let contentString2 = 
+		'<h3> Dance Studio </h3>'
+		+'<p>' 
+		+	'mobile: <a href="tel:0411 421 945">0411 421 945</a> <br>'
+		+	'email: <a href="mailto:davidjgarrard@bigpond.com"> davidjgarrard@bigpond.com </a><br>'
+		+	'address: <a href="#" onclick="centerMap()">6 Chivell St.</a>'
+		+'</p>'
+	;
+	
+	let infowindow2 = new google.maps.InfoWindow({
+    content: contentString2
+	}); 
+
+	marker2.addListener('click', function() {
+    infowindow2.open(map, marker2);
+	});
+}
+</script>
+<!--End Google map API -->
+<h2 id="previous-positions">Previous Positions</h2>
+<h4 id="website-developer-span-class%22date%222019span">Website Developer <span class="date">2019</span></h4>
+<p>DK Centre of Arts</p>
+<p>Responsibilities</p>
+<ul>
+<li>Create a website for a family owed small business</li>
+<li>Communicate the organisation’s community engagement</li>
+<li>Ability to add a digital presence despite owner lack of experience</li>
+</ul>
+<p>Achievements</p>
+<ul>
+<li>Received praise for my ability to communicate  DK Centre’s role in the community through my the website and extremely well worded description on the home page</li>
+<li>Owner and manager’s  observation showed an ability to work on a massive project day in and out without being distracted until project completion</li>
+<li>Created a user friendly interface to post things in website even for people with low computer skills</li>
+<li>Gained experience and lessons in programming, I now use version control systems and applications from hosting platforms, gained from hard lessons and failures that have been learnt and have been overcome.</li>
+<li>Finalized my learning in a full stack website development creating a website front to back</li>
+<li>Shown my ability to add value to a business, every business has the potential to benefit from technology and this was demonstrated in this project</li>
+</ul>
+<p>Volunteer</p>
+<p>Digital Marketing Assistant  					2019</p>
+<p>Channel 44 ABC</p>
+<p>Responsibilities</p>
+<ul>
+<li>Maintain a website</li>
+<li>Increase traffic through SEO (search engine optimisation)</li>
+<li>Working collaboratively under the direction of an Digital Asset Manager</li>
+<li>Increasing the digital presence of a traditional television programmer</li>
+</ul>
+<p>Achievements</p>
+<ul>
+<li>Upskilled successfully in a field outside my formal education</li>
+<li>Successfully fixed many bugs and improved the layout and look of the website</li>
+<li>Gained valuable insight into the community television programming</li>
+<li>Finalized my learning in WordPress, HTML, CSS, JavaScript, PHP</li>
+<li>Shown my ability to adapt and thrive in an increasingly digital world.</li>
+</ul>
+<p>Drill Operator	2015</p>
+<p>Raglan Drilling</p>
+<p>Responsibilities</p>
+<ul>
+<li>Operating and maintaining drill machinery</li>
+<li>Tending to minor tasks in the yard when not in the field</li>
+<li>Working in a team to accomplish tasks</li>
+</ul>
+<p>Achievements</p>
+<ul>
+<li>Was opened to a non-academic work experience outside of comfort zone</li>
+<li>Gained experience in more physical activities</li>
+<li>Gained valuable insight into the mining industry as well as travel out of state</li>
+<li>Sense of independence from living out of state</li>
+<li>Able to gain a perspective and empathise with other interesting people from  very different and diverse backgrounds</li>
+</ul>
+<p>Education &amp; Qualifications</p>
+<hr>Diploma in Web Development<br> Lighthouse Labs 	<span class="date">2020</span><hr>
+<p>Bachelor of Business (Finance) <br>
+University of South Australia<span class="date">2016-2018</span></p>
+<hr>Bachelor of Finance and Economics <br>
+University of Adelaide<span class="date">2012-2016</span><hr>
+<p>Diploma of Business<br>
+South Australian Institute of Business and Technology	<span class="date">2011-2012</span></p>
+<hr>
+High School (Year 10-12)<br> Australian Science and Mathematics School 	<span class="date">2009-2011</span><hr>
+<h2 id="skills">Skills</h2>
+<p>Languages</p>
+<ul>
+<li>Javascript</li>
+<li>Ruby</li>
+<li>HTML / CSS</li>
+<li>PHP</li>
+<li>Bash</li>
+</ul>
+<p>Frameworks &amp; Libraries</p>
+<ul>
+<li>Node</li>
+<li>React</li>
+<li>Rails</li>
+<li>Express</li>
+<li>AJAX/JQuery</li>
+<li>Chai / Mocha</li>
+<li>SASS</li>
+</ul>
+<p>Databases</p>
+<ul>
+<li>SQL</li>
+<li>PostgreSQL</li>
+</ul>
+<p>Platforms/APIs</p>
+<ul>
+<li>Git / Github</li>
+<li>Netlify</li>
+<li>Storybook</li>
+<li>Google Maps API</li>
+</ul>
+<p>Other</p>
+<ul>
+<li>REST Architecture</li>
+<li>Single Page Applications (SPA)</li>
+<li>JAM stack</li>
+<li>Microsoft Office / VBA</li>
+<li>Photoshop / GIMP</li>
+</ul>
+<h2 id="projects">PROJECTS</h2>
+<p>WikiMaps</p>
+<p>A single page applications that allow users to create maps with custom pins and locations for collaberation based on Google Maps API</p>
+<p>HTML CSS JS SASS JS JQuery AJAX Node Express PostgreSQL</p>
+<p>Interview Scheduler</p>
+<p>A React single page web app that allows users to book appointments based on limited spots, first come, first serve basis</p>
+<p>React Storybook PostgreSQL Jest</p>
+<p>Tweeter
+Single page Twitter clone app</p>
+<p>HTML CSS JS JQuery AJAX Node Express</p>
+<p>Jungle
+A simple Ruby on Rails e-commerce app</p>
+<p>Ruby Rails RSpec bcrypt</p>
+
+    </body>
+    </html>
