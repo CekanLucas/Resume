@@ -77,66 +77,210 @@ i, .highlight, .sololearn{
 #map{
   filter: hue-rotate(180deg) invert(1) brightness(350%) contrast(30%);
 }
+.screenshot-container{
+  height: 200px;
+width: 100%;
+overflow-y: scroll;
+white-space: nowrap;
+border: 3px solid white;
+border-radius: 20px;
+}
+.screenshot{
+  filter: hue-rotate(0deg) contrast(33%);
+  width: 100%;
+  height: auto;
+  max-height: none;
+}
 .Responsibilities{
-  color: rgb(26, 40, 238);
+  color: blueviolet;
   font-weight: bolder;
 }
 .Achievements{
   color: limegreen;
   font-weight: bolder;
 }
+.tech{
+  height: 1.5em;
+  margin-right: 3em;
+  vertical-align: middle;
+}
+p > span.tech{
+  flex: auto;
+  color:turquoise;
+}
+p.techlist{
+  display: flex;
+}
+#col2 {
+  width: 44vw;
+  float: right;
+  box-sizing: border-box;
+}
+#col1 {
+  width: 44vw;
+  padding-right: 3em;
+  float: left;
+  box-sizing: border-box;
+}
+#skills-col1{
+  float:left;
+  width: 40%;
+  box-sizing:border-box;
+}
+#skills-col2{
+  float:right;
+  width:50%;
+  box-sizing:border-box;
+}
+pre{
+  padding:0 !important;
+  margin:0 !important;
+  overflow: hidden !important;
+}
+table {
+  margin:auto;
+}
 </style>
 <script src="./JS.js"></script>
 </head>    
 <h1>Lucas Cekan</h1>
 <h2>Full Stack Web Developer</h2>
-<p>Junior Full Stack Web Developer with a <span class="Tomato">proven track record of adding value</span> to any bussiness. Motivating presence in a team context. <em>Extra bonus skills in graphic design, user experience and user design, communication through online media, learning and applying new skills and much more.</em> <span class="highlight">Looking for a challenge to apply my enthusiasm and creativity.</span> Analaytical mindset gained from background in <span class="Violet">Finance and Economics</span> from tertiary education and also in <span class="Violet">Science and Mathematics</span> from specialised highschool</p>
-<table>
-<thead>
-<tr>
-<th>Contact &amp; Info</th>
-<th>Info Links</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><i class="fas fa-envelope-open-text"></i></td>
-<td><a href="mailto:CekanLucas@gmail.com">CekanLucas@gmail.com</a></td>
-</tr>
-<tr>
-<td><i class="fas fa-mobile-alt"></td>
-<td><a href="tel:289-931-5522">289-931-5522</a></td>
-</tr>
-<tr>
-<td><i class="fab fa-linkedin"></i></td>
-<td><a href="https://www.linkedin.com/in/lucas-cekan-760673160/">LinkedIn</a></td>
-</tr>
-<tr>
-<td><i class="fab fa-github-square"></i></td>
-<td><a href="https://github.com/Dubi911">GitHub</a></td>
-</tr>
-<tr>
-<td><img class=sololearn src="file:////media/dubi/76A0-88E7/projects/playground/Notes/Resume/sololearnLogo.svg"></td>
-<td><a href="https://www.sololearn.com/Profile/11527370">SpaceJam<span class="Red">♨</span></a></td>
-</tr>
-<tr>
-<td><i class="fas fa-map-marker-alt"></i></td>
-<td>See Map*</td>
-</tr>
-</tbody>
-</table>
-<p>*Toronto, St. Catherines, Welland, Hamilton Region</p>
-<!--Google map API -->
-<div id="map" style="width:90%;height:400px;"></div>
-<script>
+<div id="col1">
+  <h2>Summary</h2>
+  <p>Junior Full Stack Web Developer with a <span class="Tomato">proven track record of adding value</span> to any bussiness. Motivating presence in a team context. <em>Extra bonus skills in graphic design, user experience and user design, communication through online media, learning and applying new skills and much more.</em> <span class="highlight">Looking for a challenge to apply my enthusiasm and creativity.</span> Analaytical mindset gained from background in <span class="Violet">Finance and Economics</span> from tertiary education and also in <span class="Violet">Science and Mathematics</span> from specialised highschool</p>
+  <table>
+  <thead>
+  <tr>
+  <th>Contact &amp; Info</th>
+  <th>Info Links</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><i class="fas fa-envelope-open-text"></i></td>
+  <td><a href="mailto:CekanLucas@gmail.com">CekanLucas@gmail.com</a></td>
+  </tr>
+  <tr>
+  <td><i class="fas fa-mobile-alt"></td>
+  <td><a href="tel:289-931-5522">289-931-5522</a></td>
+  </tr>
+  <tr>
+  <td><i class="fab fa-linkedin"></i></td>
+  <td><a href="https://www.linkedin.com/in/lucas-cekan-760673160/">LinkedIn</a></td>
+  </tr>
+  <tr>
+  <td><i class="fab fa-github-square"></i></td>
+  <td><a href="https://github.com/Dubi911">GitHub</a></td>
+  </tr>
+  <tr>
+  <td><img class=sololearn src="file:////media/dubi/76A0-88E7/projects/playground/Notes/Resume/sololearnLogo.svg"></td>
+  <td><a href="https://www.sololearn.com/Profile/11527370">SpaceJam<span class="Red">♨</span></a></td>
+  </tr>
+  <tr>
+  <td><i class="fas fa-map-marker-alt"></i></td>
+  <td>See Map*</td>
+  </tr>
+  </tbody>
+  </table>
+  <p>*Toronto, St. Catherines, Welland, Hamilton Region</p>
+  <!--Google map API -->
+  <div id="map" style="width:90%;height:400px;"></div>
+  <script>
+  
+  function initMap() { // Initialize and add the map
+    	const center = {lat: 43.4, lng: -79.5};
+    	const map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 9, center});
+  }
+  </script>
+  <!--End Google map API -->
+  <p>Other</p>
+  <ul>
+  <li>REST Architecture</li>
+  <li>Single Page Applications (SPA)</li>
+  <li>JAM stack</li>
+  <li>Microsoft Office / VBA</li>
+  <li>Photoshop / GIMP</li>
+  <li>Wordpress</li>
+  </ul>
+    
+</div>
+<div id="col2">
+<h2>Education &amp; Qualifications</h2>
+<hr>Diploma in Web Development<br> Lighthouse Labs 	<span class="date">2020</span><hr>
+<p>Bachelor of Business (Finance) <br>
+University of South Australia<span class="date">2016-2018</span></p>
+<hr>Bachelor of Finance and Economics <br>
+University of Adelaide<span class="date">2012-2016</span><hr>
+<p>Diploma of Business<br>
+South Australian Institute of Business and Technology	<span class="date">2011-2012</span></p>
+<hr>
+High School (Year 10-12)<br> Australian Science and Mathematics School 	<span class="date">2009-2011</span><hr>
+<h2 id="skills">Skills</h2>
 
-function initMap() { // Initialize and add the map
-  	const center = {lat: 43.4, lng: -79.5};
-  	const map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 9, center});
-}
-</script>
-<!--End Google map API -->
+<pre>
+  <div id="skills-col1">
+    <p>Languages</p>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png' class=tech>  Javascript <br>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/198px-Ruby_logo.svg.png' class=tech>  Ruby <br>
+    <img src='https://solidfoundationwebdev.com/system/categories/images/000/000/004/original/html-css.png?1570689942' class=tech>HTML &amp; CSS <br>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Webysther_20160423_-_Elephpant.svg/1024px-Webysther_20160423_-_Elephpant.svg.png' class=tech> PHP<br>
+        <p>Databases</p>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png' class=tech> PostgreSQL<br>
+        <p>Platforms/APIs</p>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png' class=tech>Git / GitHub<br>
+    <img src='https://www.netlify.com/img/press/logos/logomark.png' class=tech>Netlify<br>
+    <img src='https://pbs.twimg.com/profile_images/1100804485616566273/sOct-Txm_400x400.png' class=tech>Storybook<br>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Google_Maps_icon.svg/1200px-Google_Maps_icon.svg.png' class=tech>Google Maps API<br>
+  </div>
+    <div id="skills-col2">
+ 
+    <p>Frameworks &amp; Libraries</p>
+    <img src='https://image.flaticon.com/icons/svg/919/919825.svg' class=tech>  Node<br>
+    <img src='https://cdn.auth0.com/blog/nodejs-awesome-polls/nodejs_logo.png' class=tech>  Express<br>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png' class=tech> React<br>
+    <img src='https://cdn.iconscout.com/icon/free/png-512/jquery-10-1175155.png' class=tech>  JQuery<br>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/AJAX_logo_by_gengns.svg/398px-AJAX_logo_by_gengns.svg.png' class=tech>AJAX<br>
+    <img src='https://camo.githubusercontent.com/903ad4f00a925a7415df14e7949b24a6332030d7/68747470733a2f2f61706974657374696e672e6a616d65736d657373696e6765722e636f6d2f6173736574732f696d672f6d6f6368612d636861692f6c6f676f2e706e67' class=tech> Chai &amp; Mocha<br>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/320px-Sass_Logo_Color.svg.png' class=tech>  SASS<br>
+    <img src='https://thinkster.io/assets/homepage/rails-9b13de39de9d2eed10a2418734ee1e584cdc9634c04206af1c2bfcc8b0d0e3d5.png' class=tech>  Rails<br>
+
+    
+  </pre>
+
+   </div>
+<div>
+
+  <h2 id="projects">PROJECTS</h2>
+  <div class="screenshot-container">
+    <img src="project screenshots/MapWiki.png" class=screenshot title='MapWiki'> 
+  </div>
+	<p>A single page applications that allow users to create maps with custom pins and locations for collaboration based on Google Maps API</p>
+	<p class=techlist><span class="tech">HTML</span> <span class="tech">CSS</span> <span class="tech">JS</span> <span class="tech">SASS</span> <span class="tech">JS</span> <span class="tech">JQuery</span> <span class="tech">AJAX</span> <span class="tech">Node</span> <span class="tech">Express</span> <span class="tech">PostgreSQL</span></p>
+	<div class="screenshot-container">
+	  <img src="project screenshots/InterviewScheduler.png" class=screenshot title='MapWiki'> 
+	</div>
+	<p>A React single page web app that allows users to book appointments based on limited spots, first come, first serve basis</p>
+	<p class=techlist><span class="tech">React</span> <span class="tech">SASS</span> <span class="tech">Storybook</span> <span class="tech">PostgreSQL</span> <span class="tech">Jest</span></p>
+	<div class="screenshot-container">
+	  <img src="project screenshots/tweeter.png" class=screenshot title='MapWiki'> 
+	</div>
+	<p>Single page Twitter clone app</p>
+	<p class=techlist><span class="tech">HTML</span> <span class="tech">CSS</span> <span class="tech">JS</span> <span class="tech">JQuery</span> <span class="tech">AJAX</span> <span class="tech">Node</span> <span class="tech">Express</span></p>
+	<div class="screenshot-container">
+	  <img src="project screenshots/TinyApp.png
+	  " class=screenshot title='MapWiki'> 
+	</div>
+	<p>Partially single page app to save shortened urls for use whith character limitation</p>
+	<p class=techlist><span class="tech">HTML</span> <span class="tech">CSS</span> <span class="tech">JS</span> <span class="tech">JQuery</span> <span class="tech">AJAX</span> <span class="tech">Node</span> <span class="tech">Express</span></p>
+	<p>Jungle</p>
+	<div class="screenshot-container">
+	  <img src="project screenshots/MapWiki.png" class=screenshot title='MapWiki'> 
+	</div>
+	<p>A simple Ruby on Rails e-commerce app</p>
+	<p class=techlist><span class="tech">Ruby</span> <span class="tech">Rails</span> <span class="tech">RSpec</span> <span class="tech">bcrypt</span></p>
+</div>
+
 <h2>Previous Positions</h2>
 <h4>Website Developer <span class="date">2019</span></h4>
 <p>DK Centre of Arts</p>
@@ -156,7 +300,7 @@ function initMap() { // Initialize and add the map
 <li>Shown my ability to add value to a business, every business has the potential to benefit from technology and this was demonstrated in this project</li>
 </ul>
 <h4>Digital Marketing Assistant & Volunteer<span class="date">2019</span></h4>
-<p>Channel 44 ABC</p>
+<p>Channel 44 ABC Community Telivision</p>
 <p class=Responsibilities>Responsibilities</p>
 <ul>
 <li>Maintain a website</li>
@@ -188,69 +332,7 @@ function initMap() { // Initialize and add the map
 <li>Sense of independence from living out of state</li>
 <li>Able to gain a perspective and empathise with other interesting people from  very different and diverse backgrounds</li>
 </ul>
-<p>Education &amp; Qualifications</p>
-<hr>Diploma in Web Development<br> Lighthouse Labs 	<span class="date">2020</span><hr>
-<p>Bachelor of Business (Finance) <br>
-University of South Australia<span class="date">2016-2018</span></p>
-<hr>Bachelor of Finance and Economics <br>
-University of Adelaide<span class="date">2012-2016</span><hr>
-<p>Diploma of Business<br>
-South Australian Institute of Business and Technology	<span class="date">2011-2012</span></p>
-<hr>
-High School (Year 10-12)<br> Australian Science and Mathematics School 	<span class="date">2009-2011</span><hr>
-<h2 id="skills">Skills</h2>
-<p>Languages</p>
-<ul>
-<li>Javascript</li>
-<li>Ruby</li>
-<li>HTML / CSS</li>
-<li>PHP</li>
-<li>Bash</li>
-</ul>
-<p>Frameworks &amp; Libraries</p>
-<ul>
-<li>Node</li>
-<li>React</li>
-<li>Rails</li>
-<li>Express</li>
-<li>AJAX/JQuery</li>
-<li>Chai / Mocha</li>
-<li>SASS</li>
-</ul>
-<p>Databases</p>
-<ul>
-<li>SQL</li>
-<li>PostgreSQL</li>
-</ul>
-<p>Platforms/APIs</p>
-<ul>
-<li>Git / Github</li>
-<li>Netlify</li>
-<li>Storybook</li>
-<li>Google Maps API</li>
-</ul>
-<p>Other</p>
-<ul>
-<li>REST Architecture</li>
-<li>Single Page Applications (SPA)</li>
-<li>JAM stack</li>
-<li>Microsoft Office / VBA</li>
-<li>Photoshop / GIMP</li>
-<li>Wordpress</li>
-</ul>
-<h2 id="projects">PROJECTS</h2>
-<p>WikiMaps</p>
-<p>A single page applications that allow users to create maps with custom pins and locations for collaboration based on Google Maps API</p>
-<p>HTML CSS JS SASS JS JQuery AJAX Node Express PostgreSQL</p>
-<p>Interview Scheduler</p>
-<p>A React single page web app that allows users to book appointments based on limited spots, first come, first serve basis</p>
-<p>React Storybook PostgreSQL Jest</p>
-<p>Tweeter
-Single page Twitter clone app</p>
-<p>HTML CSS JS JQuery AJAX Node Express</p>
-<p>Jungle
-A simple Ruby on Rails e-commerce app</p>
-<p>Ruby Rails RSpec bcrypt</p>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0-1dTUpgb4f7Za4f5vey93FaMvhr13yI&callback=initMap"></script>
     </body>
     </html>
