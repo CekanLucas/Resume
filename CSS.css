@@ -1,5 +1,5 @@
 * {background-color: transparent;}
-html>body {
+html {
     background-color: #000;
     background-image: url(
 "https://www.transparenttextures.com/patterns/cartographer.png");
@@ -7,6 +7,9 @@ html>body {
     -1px -1px 0.5px #FFF,
      0px  0px 0.5px #000;
     filter: contrast(300%);
+}
+html>body{
+  background-color: transparent;
 }
 h1,h2,h3,h4,h5,h6 {
     color: goldenrod;
