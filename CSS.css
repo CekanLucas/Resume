@@ -1,4 +1,7 @@
-* {background-color: transparent;}
+* {
+    background-color: transparent;
+    font-family: 'Fira Sans', 'Roboto', Arial, sans-serif;
+}
 html {
     background-color: #000;
     background-image: url(
@@ -10,6 +13,7 @@ html {
 }
 html>body{
   background-color: transparent !important;
+  zoom:120%;
 }
 h1,h2,h3,h4,h5,h6 {
     color: goldenrod;
@@ -32,14 +36,14 @@ h2>code, p>code, li>code, div>code {
 }
 li {
     color: skyblue;
-    text-shadow: 1px 1px 0.5px;
+    /* text-shadow: 1px 1px 0.5px; */
 }
 
-   html>body, p {
-  font-family: ubuntu;
-  font-size: 1.1em;
+html>body, p {
+  /* font-family: 'fira sans', 'roboto', sans-serif; */
+  font-size: 1.2em;
   text-shadow:none;
-  color:whitesmoke
+  color:whitesmoke;
 }
 h2>code, p>code, li>code, div>code {
     background-color: #09A;
@@ -156,3 +160,18 @@ a:visited, a{
   color:cyan;
 }
 
+.project {
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.github-links {
+  font-size: 1.5em;
+}
+.github-links :hover {
+  /* font-size: 1em; */
+  color: yellow;
+}
