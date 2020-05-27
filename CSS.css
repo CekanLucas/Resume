@@ -85,9 +85,9 @@ i, .highlight, .sololearn{
   padding: none;
 }
 .sololearn{
-  position:relative;
-  right: 60px;
-  height:2em; 
+  position: relative;
+  right: 39px;
+  height: 1.1em;
 }
 .date{
   float: right;
