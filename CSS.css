@@ -12,7 +12,7 @@ html {
     text-shadow: 
     -1px -1px 0.5px #FFF,
      0px  0px 0.5px #000;
-    filter: contrast(300%);
+    filter: contrast(1.1);
 }
 html>body{
   background-color: transparent !important;
