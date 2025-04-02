@@ -1,0 +1,97 @@
+
+i,
+.highlight,
+.sololearn {
+  font-weight: bold;
+  text-shadow: none;
+  margin: 0;
+  padding: none;
+}
+.sololearn {
+  position: relative;
+  right: 39px;
+  height: 1.1em;
+}
+.date {
+  float: right;
+  font-weight: bold;
+}
+#map {
+  filter: hue-rotate(180deg) invert(1) brightness(350%) contrast(30%);
+}
+.screenshot-container {
+  height: 200px;
+  width: 100%;
+  overflow-y: scroll;
+  white-space: nowrap;
+  border: 3px solid white;
+  border-radius: 20px;
+}
+.screenshot {
+  filter: hue-rotate(0deg) contrast(33%);
+  width: 100%;
+  height: auto;
+  max-height: none;
+}
+.Responsibilities {
+  color: blueviolet;
+  font-weight: bolder;
+}
+.Achievements {
+  color: limegreen;
+  font-weight: bolder;
+}
+.tech {
+  height: 1.5em;
+  margin-right: 3em;
+  vertical-align: middle;
+}
+p > span.tech {
+  flex: auto;
+  color: turquoise;
+}
+p.techlist {
+  display: flex;
+}
+#skills-col1 {
+  float: left;
+  width: 40%;
+  box-sizing: border-box;
+}
+#skills-col2 {
+  float: right;
+  width: 50%;
+  box-sizing: border-box;
+}
+/* Remove Pre styles */
+#skills-col1,
+#skills-col2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 10px;
+}
+
+
+pre {
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+}
+table {
+  margin: auto;
+}
+
+.project {
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.github-links {
+  font-size: 1.5em;
+}
+.github-links :hover {
+  /* font-size: 1em; */
+  color: yellow;
+}

@@ -10,117 +10,163 @@
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 
-  <link rel="stylesheet" type="text/css" media="all" href="./color.css"/>
-  <link rel="stylesheet" type="text/css" media="all" href="./CSS.css"/>
+  <!-- Below stylesheets should not be applied when printing -->
+  <link rel="stylesheet" type="text/css" href="./color.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="./CSS.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="./print.css" media="print" />
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono:500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Fira+Code|Fira+Sans|Roboto&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Fira+Code|Fira+Sans|Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./font-awesome/css/all.css">
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <script src="./JS.js"></script>
+
+  <style>
+    @media print {
+
+      #skills,
+      #projects-section,
+      #previous-positions {
+        break-before: page;
+      }
+
+      .dont-print,
+      .button,
+      #projects-section,
+      .Gold,
+      #map {
+        display: none;
+      }
+
+      .columns {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      #col2 {
+        width: 100%;
+      }
+
+      .express-icon {
+        filter: invert(0);
+      }
+    }
+
+    .express-icon {
+      filter: invert(1);
+    }
+
+    button {
+      float: right;
+      position: absolute;
+      bottom: 0.5em;
+      margin: 0 0px;
+    }
+  </style>
+
+
 </head>
 
 <body>
-  <h1>Lucas Cekan</h1>
+  <h1>Lucas Cekan   <button class="button is-large is-light is-outlined" onclick="window.print()">Print this page&nbsp;&nbsp;<i
+    class="fas fa-solid fa-print"></i></button></h1>
+
   <h2>Full Stack Web Developer</h2>
   <div class="columns">
 
-    
-  <div id="col1" class=column>
-    <h2>Summary</h2>
-    <p>Full Stack Web Developer with a <span class="Tomato">proven track record of adding value</span> to any business.
-      Motivating presence in a team context. <em>Extra bonus skills in graphic design, user experience and user design,
-        communication through online media, learning and applying new skills and much more.</em> <span
-        class="highlight"><strong>Looking for a challenge to apply my enthusiasm and creativity.</strong></span> Analytical mindset
-      gained from background in <span class="Violet">Finance and Economics</span> from tertiary education and also in
-      specialized <span class="Violet">Science and Mathematics</span> school.</p>
-    <p><span class="Gold">Keen and looking forward to create the perfect web experience</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Contact &amp; Info</th>
-          <th>Links</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><i class="fas fa-envelope-open-text"></i></td>
-          <td><a href="mailto:CekanLucas@gmail.com">CekanLucas@gmail.com</a></td>
-        </tr>
-        <tr>
-          <td><i class="fas fa-mobile-alt"></td>
-          <td><a href="tel:289-931-5522">289-931-5522</a></td>
-        </tr>
-        <tr>
-          <td><i class="fab fa-linkedin"></i></td>
-          <td><a href="https://www.linkedin.com/in/lucas-cekan-760673160/" target="_blank">LinkedIn</a></td>
-        </tr>
-        <tr>
-          <td><i class="fab fa-github-square"></i></td>
-          <td><a href="https://github.com/CekanLucas" target="_blank">GitHub</a></td>
-        </tr>
-        <tr>
-          <td>
+    <div id="col1" class=column>
+      <h2>Summary</h2>
+      <p>Full Stack Web Developer with a <span class="Tomato">proven track record of adding value</span> to any
+        business.
+        Motivating presence in a team context. <em>Extra bonus skills in graphic design, user experience and user
+          design,
+          communication through online media, learning and applying new skills and much more.</em> <span
+          class="highlight"><strong>Looking for a challenge to apply my enthusiasm and creativity.</strong></span>
+        Analytical mindset
+        gained from background in <span class="Violet">Finance and Economics</span> from tertiary education and also in
+        specialized <span class="Violet">Science and Mathematics</span> school.</p>
+      <p><span class="Gold">Keen and looking forward to create the perfect web experience</span></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Contact &amp; Info</th>
+            <th>Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><i class="fas fa-envelope-open-text"></i></td>
+            <td><a href="mailto:CekanLucas@gmail.com">CekanLucas@gmail.com</a></td>
+          </tr>
+          <tr>
+            <td><i class="fas fa-mobile-alt"></td>
+            <td><a href="tel:289-931-5522">289-931-5522</a></td>
+          </tr>
+          <tr class="dont-print">
+            <td><i class="fab fa-linkedin"></i></td>
+            <td><a href="https://www.linkedin.com/in/lucas-cekan-760673160/" target="_blank">LinkedIn</a></td>
+          </tr>
+          <tr class="dont-print">
+            <td><i class="fab fa-github-square"></i></td>
+            <td><a href="https://github.com/CekanLucas" target="_blank">GitHub</a></td>
+          </tr>
+          <tr class="dont-print">
+            <td>
               <i class="fab"><img class='sololearn' src="./sololearnLogo.svg"></i>
-          </td>
-          <td><a href="https://www.sololearn.com/Profile/11527370" target="_blank">Sololearn</a></td>
-        </tr>
-        <tr>
-          <td><i class="fas fa-map-marker-alt"></i></td>
-          <td>See Map*</td>
-        </tr>
-      </tbody>
-    </table>
-    <p>*Toronto, St. Catherines, Hamilton Region<span class="Gold">
-    	<br><i>[</i> <strong>Golden Horseshoe Area</strong> 
-    </span><i>]</i></p>
-    <!--Google map API -->
-    <div id="map" style="width:90%;height:400px;"></div>
-    <script>
+            </td>
+            <td><a href="https://www.sololearn.com/Profile/11527370" target="_blank">Sololearn</a></td>
+          </tr>
+          <tr class="dont-print">
+            <td><i class="fas fa-map-marker-alt"></i></td>
+            <td>See Map*</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="dont-print">*Toronto, St. Catherines, Hamilton Region<span class="Gold">
+          <br><i>[</i> <strong>Golden Horseshoe Area</strong>
+        </span><i>]</i></p>
+      <!--Google map API -->
+      <div id="map" style="width:90%;height:400px;"></div>
+      <script>
 
-      function initMap() { // Initialize and add the map
-        const center = { lat: 43.4, lng: -79.5 };
-        const map = new google.maps.Map(
-          document.getElementById('map'), { zoom: 9, center });
-      }
-    </script>
-    <!--End Google map API -->
-    <p>Other</p>
-    <ul>
-      <li>REST Architecture</li>
-      <li>Single Page Applications (SPA)</li>
-      <li>JAM stack</li>
-      <li>Microsoft Office / VBA</li>
-      <li>Photoshop / GIMP</li>
-      <li>Wordpress</li>
-    </ul>
+        function initMap() { // Initialize and add the map
+          const center = { lat: 43.4, lng: -79.5 };
+          const map = new google.maps.Map(
+            document.getElementById('map'), { zoom: 9, center });
+        }
+      </script>
+      <!--End Google map API -->
 
-  </div>
-  <div id="col2" class=column>
-    <h2>Education &amp; Qualifications</h2>
+    </div>
+    <div id="col2" class=column>
+      <h2>Education &amp; Qualifications</h2>
 
-    <p>Bachelor in Computer Science<br> Algoma University <span class="date">2023</span></p>
-    
-    <hr><p>Diploma in Web Development<br> Lighthouse Labs <span class="date">2020</span></p>
-    
-    <hr><p>Bachelor of Business (Finance Focus) <br>
-      University of South Australia<span class="date">2016-2018</span></p>
-    
-    <hr><p>
-      Bachelor of Finance and Economics <br>
-      University of Adelaide<span class="date">2012-2016</span>
-    </p>
+      <p>Bachelor in Computer Science<br> Accelerated Pathway <br> Algoma University <span class="date">2023</span></p>
 
-    <hr><p>Diploma of Business<br>
-      South Australian Institute of Business and Technology <span class="date">2011-2012</span></p>
-    <hr>
-    <p>
-      High School (Year 10-12)<br> Australian Science and Mathematics School <span class="date">2008-2011</span>
-      <br> Flinders University
-    </p>
-    
-    <h2 id="skills">Skills</h2>
+      <hr>
+      <p>Diploma in Web Development<br> Lighthouse Labs <span class="date">2020</span></p>
 
-    <pre>
+      <hr>
+      <p>Bachelor of Business (Finance Focus) <br>
+        University of South Australia<span class="date">2016-2018</span></p>
+
+      <hr>
+      <p>
+        Bachelor of Finance and Economics <br>
+        University of Adelaide<span class="date">2012-2016</span>
+      </p>
+
+      <hr>
+      <p>Diploma of Business<br>
+        South Australian Institute of Business and Technology <span class="date">2011-2012</span></p>
+      <hr>
+      <p>
+        High School (Year 10-12)<br> Australian Science and Mathematics School <span class="date">2008-2011</span>
+        <br> Flinders University
+      </p>
+
+      <h2 id="skills">Skills</h2>
+
+      <pre>
   <div id="skills-col1">
     <p>Languages</p>
     <i class="devicon-javascript-plain colored tech"></i>  Javascript <br>
@@ -143,7 +189,7 @@
     <p>Frameworks &amp; Libraries</p>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="tech"/>     NodeJS <br>
     <i class="devicon-react-plain colored tech"></i>       React<br>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" class="tech" style="filter: invert();"/>     Express<br>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" class="tech express-icon"/>     Express<br>
     <i class="devicon-jquery-plain colored tech"></i>       JQuery<br>
     <i class="devicon-sass-plain colored tech"></i>       SASS <br>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mocha/mocha-original.svg" class="tech"/>     Chai &amp; Mocha <br>
@@ -159,15 +205,30 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" class="tech"/>Google Maps API<br>
   </div>
   </pre>
-</div>
+    </div>
 
-</div>
-  <div>
+  </div>
+
+  <div class="other-skills">
+    <p>Other Skills</p>
+    <ul>
+      <li>REST Architecture</li>
+      <li>Single Page Applications (SPA)</li>
+      <li>JAM stack</li>
+      <li>Microsoft Office / VBA</li>
+      <li>Photoshop / GIMP</li>
+      <li>Wordpress</li>
+    </ul>
+  </div>
+
+
+  <div id="projects-section">
 
     <h1 id="projects">PROJECTS</h1>
     <h2>Previews are Scrollable & Github Links Provided</h2>
 
-    <p class=project>INDEZONE | Journaling <a href="https://github.com/altairioffe/indezone-app" class=github-links><i class="fab fa-github-square" title="click here to go to this project's github page"></i></a></p>
+    <p class=project>INDEZONE | Journaling <a href="https://github.com/altairioffe/indezone-app" class=github-links><i
+          class="fab fa-github-square" title="click here to go to this project's github page"></i></a></p>
     <div class="screenshot-container">
       <img src="project screenshots/INDEZONEJournaling.png" class=screenshot title='Journal'>
     </div>
@@ -177,9 +238,11 @@
     <p class=techlist><span class="tech">JSX</span> <span class="tech">Watson-API</span> <span class="tech">JS</span>
       <span class="tech">node-SASS</span> <span class="tech">React</span> <span class="tech">Material-UI</span> <span
         class="tech">Sequelize</span> <span class="tech">Node</span> <span class="tech">Express</span> <span
-        class="tech">PostgreSQL</span></p>
+        class="tech">PostgreSQL</span>
+    </p>
 
-    <p class=project>MapWiki <a href="https://github.com/CekanLucas/Wikimaps" class=github-links><i class="fab fa-github-square" title="click here to go to this project's github page"></i></a></p>
+    <p class=project>MapWiki <a href="https://github.com/CekanLucas/Wikimaps" class=github-links><i
+          class="fab fa-github-square" title="click here to go to this project's github page"></i></a></p>
     <div class="screenshot-container">
       <img src="project screenshots/MapWiki.png" class=screenshot title='MapWiki'>
     </div>
@@ -190,16 +253,19 @@
         class="tech">AJAX</span> <span class="tech">Node</span> <span class="tech">Express</span> <span
         class="tech">PostgreSQL</span></p>
 
-    <p class=project>Scheduler <a href="https://github.com/CekanLucas/scheduler" class=github-links><i class="fab fa-github-square" title="click here to go to this project's github page"></i></a></p>
+    <p class=project>Scheduler <a href="https://github.com/CekanLucas/scheduler" class=github-links><i
+          class="fab fa-github-square" title="click here to go to this project's github page"></i></a></p>
     <div class="screenshot-container">
       <img src="project screenshots/InterviewScheduler.png" class=screenshot title='MapWiki'>
     </div>
     <p>A React single page web app that allows users to book appointments based on limited spots, first come, first
       serve basis</p>
     <p class=techlist><span class="tech">React</span> <span class="tech">SASS</span> <span class="tech">Storybook</span>
-      <span class="tech">PostgreSQL</span> <span class="tech">Jest</span></p>
+      <span class="tech">PostgreSQL</span> <span class="tech">Jest</span>
+    </p>
 
-    <p class=project>Tweeter <a href="https://github.com/CekanLucas/tweeter" class=github-links><i class="fab fa-github-square" title="click here to go to this project's github page"></i></a></p>
+    <p class=project>Tweeter <a href="https://github.com/CekanLucas/tweeter" class=github-links><i
+          class="fab fa-github-square" title="click here to go to this project's github page"></i></a></p>
     <div class="screenshot-container">
       <img src="project screenshots/tweeter.png" class=screenshot title='MapWiki'>
     </div>
@@ -207,8 +273,9 @@
     <p class=techlist><span class="tech">HTML</span> <span class="tech">CSS</span> <span class="tech">JS</span> <span
         class="tech">JQuery</span> <span class="tech">AJAX</span> <span class="tech">Node</span> <span
         class="tech">Express</span></p>
-    
-    <p class=project>TinyUrl <a href="https://github.com/CekanLucas/tinyapp" class=github-links><i class="fab fa-github-square" title="click here to go to this project's github page"></i></a></p>
+
+    <p class=project>TinyUrl <a href="https://github.com/CekanLucas/tinyapp" class=github-links><i
+          class="fab fa-github-square" title="click here to go to this project's github page"></i></a></p>
     <div class="screenshot-container">
       <img src="project screenshots/TinyApp.png
 	  " class=screenshot title='MapWiki'>
@@ -217,16 +284,43 @@
     <p class=techlist><span class="tech">HTML</span> <span class="tech">CSS</span> <span class="tech">JS</span> <span
         class="tech">JQuery</span> <span class="tech">AJAX</span> <span class="tech">Node</span> <span
         class="tech">Express</span></p>
-    <p class=project>Jungle <a href="https://github.com/CekanLucas/jungle" class=github-links><i class="fab fa-github-square" title="click here to go to this project's github page"></i></a></p>
+    <p class=project>Jungle <a href="https://github.com/CekanLucas/jungle" class=github-links><i
+          class="fab fa-github-square" title="click here to go to this project's github page"></i></a></p>
     <div class="screenshot-container">
       <img src="project screenshots/Jungle.png" class=screenshot title='MapWiki'>
     </div>
     <p>A simple Ruby on Rails e-commerce app</p>
     <p class=techlist><span class="tech">Ruby</span> <span class="tech">Rails</span> <span class="tech">RSpec</span>
-      <span class="tech">bcrypt</span></p>
+      <span class="tech">bcrypt</span>
+    </p>
   </div>
 
-  <h2>Previous Positions</h2>
+  <h2 id="previous-positions">Previous Positions</h2>
+
+  <h4>Full Stack Developer <span class="date">2021</span></h4>
+  <p>Ellerca Health Corp</p>
+  <p class="Responsibilities">Responsibilities</p>
+  <ul>
+    <li>Secured a one-year internship after completing a web developer bootcamp and a successful interview</li>
+    <li>Collaborated with a senior developer (tech lead) on a medical app to provide online nursing services</li>
+    <li>Developed a responsive website from a template using NextJS, TypeScript, React, and MongoDB</li>
+    <li>Worked on the full stack, including payment processing (Stripe.js), backend, frontend, database, and hosting via
+      Docker</li>
+    <li>Collaborated with an offshore development team to integrate features and ensure smooth deployment</li>
+    <li>Deployed the application using a Docker image on a specialized medical hosting platform</li>
+    <li>Worked with external stakeholders, including customers, partner firms, and medical professionals, to develop and
+      implement requirements </li>
+  </ul>
+  <p class="Achievements">Achievements</p>
+  <ul>
+    <li>Developed a semi-functional website with secure login for paying customers</li>
+    <li>Assisted in onboarding new developers and mentoring junior team members</li>
+    <li>Collaborated with the scrum manager to create Figma diagrams and participated in hiring processes</li>
+    <li>Adapted to a growing, cross-functional team, including product managers</li>
+    <li>Successfully presented the product to stakeholders when my team lead was unavailable</li>
+    <li>Gained proficiency in new technologies, including NextJS, KoaJS, and MongoDB</li>
+  </ul>
+
   <h4>Website Developer <span class="date">2019</span></h4>
   <p>DK Centre of Arts</p>
   <p class=Responsibilities>Responsibilities</p>
