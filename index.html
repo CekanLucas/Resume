@@ -30,6 +30,10 @@
         break-before: page;
       }
 
+      .only-print {
+        display: table-row !important;
+      }
+
       .dont-print,
       .button,
       #projects-section,
@@ -51,6 +55,14 @@
         filter: invert(0);
       }
     }
+
+    .only-print {
+      display: none;
+    }
+
+    .only-print {
+        display: none;
+      }
 
     .express-icon {
       filter: invert(1);
@@ -104,7 +116,8 @@
           </tr>
           <tr class="dont-print">
             <td><i class="fab fa-linkedin"></i></td>
-            <td><a href="https://www.linkedin.com/in/lucas-cekan-760673160/" target="_blank" rel="noopener">LinkedIn</a></td>
+            <td><a href="https://www.linkedin.com/in/lucas-cekan-760673160/" target="_blank" rel="noopener">LinkedIn</a>
+            </td>
           </tr>
           <tr class="dont-print">
             <td><i class="fab fa-github-square"></i></td>
@@ -119,6 +132,10 @@
           <tr class="dont-print">
             <td><i class="fas fa-map-marker-alt"></i></td>
             <td>See Map*</td>
+          </tr>
+          <tr class="only-print">
+            <td><i class="fas fa-globe"></i></td>
+            <td><b>Online Version of this Resume &amp; Portfolio</b><br><a href="https://LucasCekanResume.netlify.app">LucasCekanResume.netlify.app</a></td>
           </tr>
         </tbody>
       </table>
